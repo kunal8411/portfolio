@@ -1,7 +1,87 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import userData from "@constants/data";
-
+import { toast } from "react-toastify";
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  useEffect(() => {
+    // validate form data on change
+    validate();
+  }, [formData]);
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (validate()) {
+      // form is valid, submit it
+      console.log("Form data:", formData);
+      toast.success("Thanks for contacting me, You will get my reply soon !", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      // form is invalid, display errors
+      console.log("Errors:", errors);
+      toast.error("Please enter all details correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  }
+
+  function validate() {
+    let isValid = true;
+    const localErrors = {};
+
+    if (!formData.name) {
+      isValid = false;
+      localErrors.name = "Name is required";
+    }
+
+    if (!formData.email) {
+      isValid = false;
+      localErrors.email = "Email is required";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
+    ) {
+      isValid = false;
+      localErrors.email = "Invalid email address";
+    }
+
+    if (!formData.message) {
+      isValid = false;
+      localErrors.message = "Message is required";
+    } else if (formData.message.length < 5) {
+      isValid = false;
+      localErrors.message = "Message must be at least 5 characters";
+    }
+
+    setErrors(localErrors);
+    return isValid;
+  }
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -141,24 +221,37 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
+          <form
+            className="form rounded-lg bg-white p-4 flex flex-col"
+            onSubmit={handleSubmit}
+          >
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
             </label>
             <input
               type="text"
+              value={formData.name}
+              onChange={handleChange}
+              id="name"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
             />
+            {errors.name && <p className="text-rose-600 pl-5">{errors.name}</p>}
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
               Email
             </label>
             <input
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              id="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
             />
+            {errors.email && (
+              <p className="text-rose-600 pl-5">{errors.email}</p>
+            )}
             <label
               htmlFor="message"
               className="text-sm text-gray-600 mx-4 mt-4"
@@ -170,7 +263,13 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
+            {errors.message && (
+              <p className="text-rose-600 pl-5">{errors.message}</p>
+            )}
             <button
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
