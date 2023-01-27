@@ -27,7 +27,7 @@ I've kept the pages as simple as possible. Only the required sections are includ
 
 
 
-![Hompage]<img width="1440" alt="portfolio" src="https://user-images.githubusercontent.com/63067292/215161659-d368dd0b-c680-4956-ba8e-8e2769fcacf5.png">
+<img width="1440" alt="portfolio" src="https://user-images.githubusercontent.com/63067292/215161659-d368dd0b-c680-4956-ba8e-8e2769fcacf5.png">
 
 
 
@@ -42,7 +42,7 @@ The website is built in my favourite Tech Stack and deployed on [Vercel](https:/
 
 # Usage
 
-- Clone the repository using `git clone https://github.com/manuarora700/simple-developer-portfolio-website.git`
+- Clone the repository using `git clone https://github.com/kunal8411/portfolio.git`
 - Install all the modules by using `npm i` or `npm install` or `yarn`
 - Run the local development server by using `npm run dev` or `yarn dev`
 - Make the required edits and deploy to YOUR GitHub repo for CI/CD.
@@ -61,4 +61,4 @@ This template is completely open source and free to use. Use it for client proje
 
 # Support
 
-<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/itsMeKunal" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
