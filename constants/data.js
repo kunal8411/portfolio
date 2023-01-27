@@ -52,9 +52,13 @@ const userData = {
     title:
       "I'm a software developer that loves building products and web applications that impact millions of lives",
     description: [
-      `I've been developing full-stack application since I was 15 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
-      `But now, I'm a legend. I've been coding in React,Next Js, Vue, Node.js, Express, Feathers, Fastify, MongoDB, MySQL, Bootstrap, Tailwind, C, C++. Although I barely know the syntax (Psst, Stack overflow!), I consider myself a Ninja developer I'm laughing right now.`,
+      `I am a full stack software developer with 5+ years of experience in building and maintaining web and mobile applications. I am proficient in a variety of programming languages, including JavaScript, Python, and Java, and have experience working with frameworks such as React, vue, Node, Next Js. I have a strong understanding of both front-end and back-end development and am comfortable working with databases such as MySQL and MongoDB`,
+
+      `I have a Bachelor's degree in Computer Science and hold certifications in web development from Coding Ninjas. I am passionate about building beautiful and responsive user interfaces, and I am always looking for new technologies and tools to improve my skills.`,
+
+      `In my free time, I enjoy long walks on the beach... just kidding, I'm a full stack developer, I don't have free time! But when I do, I like to play video games, and I'm a big fan of open-source software. My idea of a perfect weekend is binge-watching Game of Thrones while coding up a storm. I'm also a fan of dad jokes, so feel free to share some with me. In fact, I'm so good at dad jokes, I could make an app for that, but that would be too easy.`,
+
+      `When I'm not coding, I can usually be found in the kitchen experimenting with new recipes and trying to master the art of baking sourdough bread. I also enjoy hiking and exploring the great outdoors, but I prefer to do it with my laptop and a good internet connection. I'm always on the lookout for new and exciting projects to work on, so if you have any ideas, let me know!`,
     ],
     currentProject: "Tailwind Master Kit",
     currentProjectUrl: "https://tailwindmasterkit.com",
