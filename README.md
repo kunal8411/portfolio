@@ -9,9 +9,8 @@
 
 Portfolio for developers is a simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). The website is completely Open Source, you can use it for whatever purpose you want.
 
-![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
 
-<img width="1440" alt="portfolio" src="https://user-images.githubusercontent.com/63067292/215161659-d368dd0b-c680-4956-ba8e-8e2769fcacf5.png">
+
 
 
 # Features
@@ -26,25 +25,11 @@ Portfolio for developers is a simple and minimalistic website to showcase your s
 
 I've kept the pages as simple as possible. Only the required sections are included with minimal content.
 
-## Landing
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/home.png)
 
-## About
+![Hompage]<img width="1440" alt="portfolio" src="https://user-images.githubusercontent.com/63067292/215161659-d368dd0b-c680-4956-ba8e-8e2769fcacf5.png">
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/about.png)
 
-## Projects
-
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/projects.png)
-
-## Experience
-
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/experience.png)
-
-## Contact
-
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/contact.png)
 
 # Tech Stack
 
