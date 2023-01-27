@@ -11,6 +11,9 @@ Portfolio for developers is a simple and minimalistic website to showcase your s
 
 ![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
 
+<img width="1440" alt="portfolio" src="https://user-images.githubusercontent.com/63067292/215161659-d368dd0b-c680-4956-ba8e-8e2769fcacf5.png">
+
+
 # Features
 
 - Responsive layout, works well on both Mobile and Desktop
