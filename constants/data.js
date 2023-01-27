@@ -19,7 +19,7 @@ const userData = {
     },
     {
       title: "Portfolio",
-      link: "https://manuarora.in",
+      link: "https://kunal-khairnar-portfolio.vercel.app/",
       imgUrl: "/portfolio.png",
     },
     {
