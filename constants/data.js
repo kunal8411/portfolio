@@ -8,14 +8,14 @@ const userData = {
   address: "Nashik, Maharashtra, India.",
   projects: [
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
+      title: "Absolute Fitness GYM",
+      link: "https://gym-application-nu.vercel.app/",
       imgUrl: "/gym_home_page.png",
     },
     {
-      title: "PlaceholderTech",
-      link: "https://placeholdertech.in",
-      imgUrl: "/placeholdertech.png",
+      title: "E-commerce Website",
+      link: "https://next-ecommerce-front.vercel.app/",
+      imgUrl: "/e_commerce_app.png",
     },
     {
       title: "Portfolio",
@@ -23,30 +23,30 @@ const userData = {
       imgUrl: "/portfolio.png",
     },
     {
-      title: "CovidRescue",
-      link: "https://covidrescue.co.in",
-      imgUrl: "/covidrescue.png",
+      title: "Instagram Clone Application",
+      link: "https://nextjs-instagram-clone.vercel.app/",
+      imgUrl: "/instagram_clone.png",
     },
     {
-      title: "Algochurn",
-      link: "https://algochurn.com",
-      imgUrl: "/algochurn.png",
+      title: "Chatting Application",
+      link: "https://nextjs-firechat.vercel.app/",
+      imgUrl: "/chat_app.png",
     },
-    {
-      title: "Playground",
-      link: "https://play.placeholdertech.in",
-      imgUrl: "/playground.png",
-    },
-    {
-      title: "Feedmeback",
-      link: "https://feedmeback.vercel.app",
-      imgUrl: "/feedmeback.png",
-    },
-    {
-      title: "Devmedium",
-      link: "https://devmedium.vercel.app",
-      imgUrl: "/devmedium.png",
-    },
+    // {
+    //   title: "Playground",
+    //   link: "https://play.placeholdertech.in",
+    //   imgUrl: "/playground.png",
+    // },
+    // {
+    //   title: "Feedmeback",
+    //   link: "https://feedmeback.vercel.app",
+    //   imgUrl: "/feedmeback.png",
+    // },
+    // {
+    //   title: "Devmedium",
+    //   link: "https://devmedium.vercel.app",
+    //   imgUrl: "/devmedium.png",
+    // },
   ],
   about: {
     title:
